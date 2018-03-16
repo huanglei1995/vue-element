@@ -1,0 +1,34 @@
+$blue: #3190e8;
+$bc: #e4e4e4;
+$fc: #fff;
+
+@mixin fj($type: space-between){
+	display: flex;
+	justify-content: $type;
+}
+
+@mixin ct{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@mixin center{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+@mixin wh($width, $height){
+	width: $width;
+	height: $height;
+}
+
+@mixin sc($fonts, $color){
+	font-size: $fonts;
+	color: $color;
+}
+
+@mixin font($size, $line-height, $family: 'Microsoft YaHei') {
+	font: #{$size}/#{$line-height} $family;
+}
